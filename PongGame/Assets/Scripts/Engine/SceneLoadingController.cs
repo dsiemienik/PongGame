@@ -48,7 +48,7 @@ public class SceneLoadingController : MonoBehaviour
 
         string sceneToLoad = GetSceneName(scene);
 
-        AsyncOperation loading = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+        AsyncOperation loading = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Single);
 
 
         while (loading != null && !loading.isDone)
