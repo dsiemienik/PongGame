@@ -87,6 +87,6 @@ public class GameController : MonoBehaviour {
     }
     void ResetGame()
     {
-        SceneLoadingController.Instance.LoadScene(GameScenes.Main, true);
+        SceneLoadingController.Instance.LoadScene(GameScenes.Menu, true);
     }
 }
